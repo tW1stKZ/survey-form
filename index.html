@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reports</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Feedback form</h1>
+      <p id="description">Thank you for helping to make our site better!</p> 
+    </header>
+    <main>
+      <div class="container">
+        <form id="survey-form">
+          <div class="personal-data">
+            <h2>Personal data:</h2>
+            <label for="name" id="name-label">
+              Name: <input type="text" id="name" placeholder="Enter your name" required>
+            </label>
+            <label for="email" id="email-label">
+              Email: <input type="email" id="email" placeholder="Enter your email" required>
+            </label>
+            <label for="number" id="number-label">
+              Age (optional): <input type="number" id="number" min="13" max="120" placeholder="Age">
+            </label>
+            <label for="dropdown">
+              Which of these options best describes your role?
+              <select id="dropdown">
+                <option>(select one)</option>
+                <option>Student</option>
+                <option>Full Time Job</option>
+                <option>Full Time Learner</option>
+                <option>Prefer not to say</option>
+                <option>Other</option>
+              </select>
+            </label>
+          </div>
+          <h2>Rate the site:</h2>
+          <p>Do you like our site?</p>
+          <label><input class="inline" type="radio" name="rate" value="yes"> Yes</label>
+          <label><input class="inline" type="radio" name="rate" value="no"> No</label>
+          <label><input class="inline" type="radio" name="rate" value="not sure" checked> Not sure</label>
+          <p>What did you like about the site?</p>
+          <label><input class="inline" type="checkbox" value="design"> Design</label>
+          <label><input class="inline" type="checkbox" value="design"> Design</label>
+          <label><input class="inline" type="checkbox" value="func"> Functions</label>
+          <label><input class="inline" type="checkbox" value="nothing"> Nothing</label>
+          <label>
+            <p>Your feedback about the site:</p>
+            <textarea id="feedback" name="feedback" rows="4" cals="30" placeholder="I think that..."></textarea>
+          </label>
+          <input type="submit" value="Submit" id="submit"/>
+         </form>
+      </div>
+    </main>
+  </body>
+</html>
